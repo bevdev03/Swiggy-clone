@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swiggy Clone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ TOP HALF ============ -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <div class="brand">
+        <span class="brand-icon">S</span>
+        <span class="brand-name">Swiggy</span>
+      </div>
+      <div class="location">
+        <span class="loc-arrow">➤</span>
+        <span>Setup your precise location</span>
+        <span class="chev">⌄</span>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <div class="searchbox">
+        <input type="text" placeholder="Search for restaurant and food">
+        <span class="search-icon">🔍</span>
+      </div>
+      <div class="user">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="#fff">
+          <circle cx="12" cy="8" r="4"/>
+          <path d="M4 20c0-4 4-6 8-6s8 2 8 6z"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="page">
+
+  <!-- Banner -->
+  <div class="banner">
+    <div class="banner-tag">
+      <span class="tag-icon">S</span>
+      <span>Food</span>
+    </div>
+    <h1>Order Food Online in Meerut</h1>
+    <img class="banner-img" src="images/swiggy.jpeg" alt="Burger and noodles">
+  </div>
+
+  <!-- What's on your mind -->
+  <section class="block">
+    <div class="block-head">
+      <h2>What's on your mind?</h2>
+      <div class="arrows">
+        <button onclick="scrollRow('mind', -300)">←</button>
+        <button onclick="scrollRow('mind', 300)">→</button>
+      </div>
+    </div>
+    <div class="row categories" id="mind">
+      <div class="cat"><img src="images/pizza1.jpeg" alt="Pizzas"><p>Pizzas</p></div>
+      <div class="cat"><img src="images/northindian.jpeg" alt="North Indian"><p>North Indian</p></div>
+      <div class="cat"><img src="images/cake.jpeg" alt="Cakes"><p>Cakes</p></div>
+      <div class="cat"><img src="images/biryani.jpeg" alt="Biryani"><p>Biryani</p></div>
+      <div class="cat"><img src="images/cholebhuture.jpeg" alt="Chole Bhature"><p>Chole Bhature</p></div>
+      <div class="cat"><img src="images/burger1.jpeg" alt="Burgers"><p>Burgers</p></div>
+      <div class="cat"><img src="images/rolls.jpeg" alt="Rolls"><p>Rolls</p></div>
+      <div class="cat"><img src="images/dosa.jpeg" alt="Dosa"><p>Dosa</p></div>
+      <div class="cat"><img src="images/dessert.jpeg" alt="Desserts"><p>Desserts</p></div>
+      <div class="cat"><img src="images/momos.jpeg" alt="Momos"><p>Momos</p></div>
+      <div class="cat"><img src="images/noodles.jpeg" alt="Noodles"><p>Noodles</p></div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Top restaurant chains in Meerut -->
+  <section class="block">
+    <div class="block-head">
+      <h2>Top restaurant chains in Meerut</h2>
+      <div class="arrows">
+        <button onclick="scrollRow('chains', -300)">←</button>
+        <button onclick="scrollRow('chains', 300)">→</button>
+      </div>
+    </div>
+    <div class="row chains" id="chains">
+      <div class="chain">
+        <div class="chain-img"><img src="images/cholebhuture.jpeg" alt=""><span>ITEMS AT ₹99</span></div>
+        <h4>Chole Bhature Wala</h4><div class="rating"><b>★</b>4.4 • 25-30 mins</div><p>North Indian, Snacks</p>
+      </div>
+      <div class="chain">
+        <div class="chain-img"><img src="images/chinese.jpeg" alt=""><span>20% OFF</span></div>
+        <h4>Wok Express</h4><div class="rating"><b>★</b>4.2 • 20-25 mins</div><p>Chinese, Asian</p>
+      </div>
+      <div class="chain">
+        <div class="chain-img"><img src="images/rajbhog.jpeg" alt=""><span>FREE DELIVERY</span></div>
+        <h4>Rajbhog Sweets</h4><div class="rating"><b>★</b>4.5 • 30-35 mins</div><p>Sweets, Desserts</p>
+      </div>
+      <div class="chain">
+        <div class="chain-img"><img src="images/kachori.jpeg" alt=""><span>ITEMS AT ₹79</span></div>
+        <h4>Kachori Corner</h4><div class="rating"><b>★</b>4.1 • 15-20 mins</div><p>Snacks, Street Food</p>
+      </div>
+      <div class="chain">
+        <div class="chain-img"><img src="images/burger1.jpeg" alt=""><span>50% OFF UPTO ₹100</span></div>
+        <h4>Burger Hub</h4><div class="rating"><b>★</b>4.3 • 20-25 mins</div><p>Burgers, Fast Food</p>
+      </div>
+      <div class="chain">
+        <div class="chain-img"><img src="images/pizza3.jpeg"><span>BUY 1 GET 1</span></div>
+        <h4>Pizza Palace</h4><div class="rating"><b>★</b>4.4 • 25-30 mins</div><p>Pizza, Italian</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOWER HALF ============ -->
+  <!-- <section class="block">
+    
+    <div class="grid">
+      <div class="card"><div class="img"><img src="https://loremflickr.com/400/300/pizza?lock=51" alt="Pizza"><span>ITEMS AT ₹149</span></div><h4>Pizza House</h4><div class="rating"><b>★</b>4.4 • 25-30 mins</div><p>Pizza, Italian, Fast Food</p></div>
+      <div class="card"><div class="img"><img src="https://loremflickr.com/400/300/burger?lock=52" alt="Burger"><span>20% OFF</span></div><h4>Burger Point</h4><div class="rating"><b>★</b>4.2 • 20-25 mins</div><p>Burgers, American</p></div>
+      <div class="card"><div class="img"><img src="https://loremflickr.com/400/300/biryani?lock=53" alt="Biryani"><span>FREE DELIVERY</span></div><h4>Biryani Junction</h4><div class="rating"><b>★</b>4.5 • 30-35 mins</div><p>Biryani, North Indian</p></div>
+      <div class="card"><div class="img"><img src="https://loremflickr.com/400/300/momos?lock=54" alt="Momos"><span>ITEMS AT ₹99</span></div><h4>Momo Magic</h4><div class="rating"><b>★</b>4.1 • 15-20 mins</div><p>Chinese, Tibetan</p></div>
+      <div class="card"><div class="img"><img src="https://loremflickr.com/400/300/salad?lock=55" alt="Salad"><span>15% OFF</span></div><h4>Green Bowl</h4><div class="rating"><b>★</b>4.3 • 25-30 mins</div><p>Healthy, Salads</p></div>
+      <div class="card"><div class="img"><img src="https://loremflickr.com/400/300/wrap?lock=56" alt="Rolls"><span>50% OFF UPTO ₹100</span></div><h4>Roll Express</h4><div class="rating"><b>★</b>4.0 • 20-25 mins</div><p>Rolls, Street Food</p></div>
+      <div class="card"><div class="img"><img src="https://loremflickr.com/400/300/dessert?lock=57" alt="Dessert"><span>BUY 1 GET 1</span></div><h4>Sweet Tooth</h4><div class="rating"><b>★</b>4.6 • 30-40 mins</div><p>Desserts, Bakery</p></div>
+      <div class="card"><div class="img"><img src="https://loremflickr.com/400/300/dosa?lock=58" alt="Dosa"><span>ITEMS AT ₹129</span></div><h4>Dosa Corner</h4><div class="rating"><b>★</b>4.4 • 20-25 mins</div><p>South Indian, Breakfast</p></div>
+    </div>
+  </section> -->
+
+  <!-- <section class="block">
+    <h2 class="plain-h2">Popular dishes near you</h2>
+    <div class="food-grid">
+      <div class="food"><img src="https://loremflickr.com/400/300/pizza?lock=61" alt="Pizza"><div class="food-info"><h4>Margherita Pizza</h4><p>Pizza House • ₹249</p></div></div>
+      <div class="food"><img src="https://loremflickr.com/400/300/burger?lock=62" alt="Burger"><div class="food-info"><h4>Cheese Burger</h4><p>Burger Point • ₹149</p></div></div>
+      <div class="food"><img src="https://loremflickr.com/400/300/biryani?lock=63" alt="Biryani"><div class="food-info"><h4>Chicken Biryani</h4><p>Biryani Junction • ₹299</p></div></div>
+      <div class="food"><img src="https://loremflickr.com/400/300/momos?lock=64" alt="Momos"><div class="food-info"><h4>Veg Momos</h4><p>Momo Magic • ₹99</p></div></div>
+      <div class="food"><img src="https://loremflickr.com/400/300/salad?lock=65" alt="Salad"><div class="food-info"><h4>Fresh Garden Salad</h4><p>Green Bowl • ₹179</p></div></div>
+      <div class="food"><img src="https://loremflickr.com/400/300/cake?lock=66" alt="Cake"><div class="food-info"><h4>Chocolate Cake</h4><p>Sweet Tooth • ₹199</p></div></div>
+      <div class="food"><img src="https://loremflickr.com/400/300/dosa?lock=67" alt="Dosa"><div class="food-info"><h4>Masala Dosa</h4><p>Dosa Corner • ₹129</p></div></div>
+      <div class="food"><img src="https://loremflickr.com/400/300/icecream?lock=68" alt="Ice cream"><div class="food-info"><h4>Ice Cream Sundae</h4><p>Sweet Tooth • ₹149</p></div></div>
+    </div>
+  </section> -->
+
+</main>
+
+<footer>
+  <div class="foot-grid">
+    <div><h5>Company</h5><ul><li>About</li><li>Careers</li><li>Team</li><li>Swiggy One</li></ul></div>
+    <div><h5>Contact</h5><ul><li>Help & Support</li><li>Partner with us</li><li>Ride with us</li></ul></div>
+    <div><h5>Legal</h5><ul><li>Terms & Conditions</li><li>Cookie Policy</li><li>Privacy Policy</li></ul></div>
+    <div><h5>We deliver to</h5><ul><li>Bangalore</li><li>Delhi</li><li>Mumbai</li><li>Meerut</li></ul></div>
+  </div>
+  <div class="copy">© 2026 Swiggy Clone — for learning purposes only</div>
+</footer>
+
+<script>
+  // Makes the ← → arrow buttons scroll the rows
+  function scrollRow(id, amount) {
+    document.getElementById(id).scrollBy({ left: amount, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
